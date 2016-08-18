@@ -52,9 +52,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="133.66868"
-     inkscape:cy="94.856754"
+     inkscape:zoom="5.3640679"
+     inkscape:cx="169.36298"
+     inkscape:cy="72.136156"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -163,7 +163,7 @@
        sodipodi:cy="-886.2276"
        sodipodi:cx="-403.10815"
        sodipodi:type="arc"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#648ddd;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#dd8664;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4789"
        transform="matrix(-0.96592583,-0.25881905,0.25881905,-0.96592583,0,0)" />
     <path
@@ -238,7 +238,7 @@
     <path
        transform="matrix(-0.96592583,-0.25881905,0.25881905,-0.96592583,0,0)"
        id="path4807"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#648ddd;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#dd8664;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        sodipodi:type="arc"
        sodipodi:cx="-403.10815"
        sodipodi:cy="-886.2276"
@@ -287,7 +287,7 @@
        cy="45.926754"
        cx="243.41139"
        id="circle4795"
-       style="opacity:1;fill:#648ddd;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#dd8664;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <g
      inkscape:groupmode="layer"
