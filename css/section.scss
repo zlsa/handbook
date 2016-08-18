@@ -1,0 +1,52 @@
+
+@import 'fonts';
+
+$download-height: 64px;
+
+section {
+
+  width: 100%;
+  height: 100vh;
+  
+  padding: 24px;
+  
+  h1 {
+    @include font-title();
+
+    text-transform: uppercase;
+  }
+
+  display: flex;
+
+  .download.pdf {
+    margin-bottom: auto;
+    
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+    max-height: 60vh;
+
+    position: relative;
+
+    box-shadow: 0 8px 30px rgba(black, 0.6);
+    border-radius: 1px;
+
+    img {
+      height: 100%;
+    }
+
+    h1 {
+
+      text-align: center;
+
+      word-wrap: break-word;
+    }
+    
+  }
+
+  aside {
+    flex: 1;
+  }
+  
+}

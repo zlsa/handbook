@@ -1,0 +1,127 @@
+* {
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+#header {
+  background-color: #444;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* .title, .author { */
+  /*   color: white; */
+  /*   padding: 24px; */
+  /*   text-transform: uppercase; */
+  /* } */
+  /* .title { */
+  /*   @include font-title(5vh); */
+  /*   padding-top: 3vw; */
+  /*   float: left; */
+  /* } */
+  /* .author { */
+  /*   color: rgba(white, 0.7); */
+  /*   font-family: 'Roboto Mono'; */
+  /*   font-size: 16px; */
+  /*   font-weight: bold; */
+  /*   position: absolute; */
+  /*   bottom: 0; */
+  /*   right: 0; */
+  /*   padding: 24px; */
+  /*   &:hover { */
+  /*     text-decoration: underline; */
+  /*     color: white; */
+  /*   } */
+  /* } */
+  /* .horizontal-center { */
+  /*   clear: both; */
+  /*   width: 100%; */
+  /*   display: flex; */
+  /*   flex-direction: column; */
+  /*   align-items: center; */
+  /*   position: absolute; */
+  /*   bottom: 64px; */
+  /* } */ }
+  #header .logo {
+    display: block;
+    margin-top: 24px; }
+    #header .logo img {
+      display: block;
+      max-width: 90px; }
+  #header .download.pdf img, #header .download.pdf h1 {
+    display: block;
+    max-width: 50vh;
+    margin: 24px 0;
+    border-radius: 1px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 10px 40px rgba(0, 0, 0, 0.4); }
+  #header .download.pdf img {
+    margin-bottom: 0; }
+  #header .download.pdf h1 {
+    background-color: #dd8664;
+    text-align: center;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 24px 64px; }
+  #header .docs {
+    color: #aaa;
+    text-decoration: underline;
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: bold; }
+
+@media screen and (min-width: 800px) {
+  #header .logo {
+    position: absolute;
+    top: 0;
+    left: 24px; } }
+
+section {
+  width: 100%;
+  height: 100vh;
+  padding: 24px;
+  display: flex; }
+  section h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  section .download.pdf {
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 60vh;
+    position: relative;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    border-radius: 1px; }
+    section .download.pdf img {
+      height: 100%; }
+    section .download.pdf h1 {
+      text-align: center;
+      word-wrap: break-word; }
+  section aside {
+    flex: 1; }
+
+html, body {
+  width: 100%; }
+
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  font-family: 'Roboto', sans-serif; }

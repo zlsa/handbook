@@ -1,0 +1,6 @@
+
+@mixin font-title($size: 24px) {
+  font-family: Montserrat, sans-serif;
+  font-size: $size;
+  font-weight: bold;
+}
