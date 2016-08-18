@@ -58,6 +58,9 @@
     display: block;
     margin-top: 24px; }
     #header .logo img {
+      background-color: #44658b;
+      background: url("../cover/cover-alpha-tiny.jpg") no-repeat;
+      background-size: 100% 100%;
       display: block;
       max-width: 90px; }
   #header .download.pdf img, #header .download.pdf h1 {
