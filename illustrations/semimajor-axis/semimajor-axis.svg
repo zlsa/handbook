@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="320"
+   height="128"
+   viewBox="0 0 320 128"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="semimajor-axis.svg"
+   inkscape:export-filename="/home/zlsa/projects/books/ovoh/illustrations/semimajor-axis/semimajor-axis.png"
+   inkscape:export-xdpi="360"
+   inkscape:export-ydpi="360">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6828">
+      <stop
+         style="stop-color:#648ddd;stop-opacity:1;"
+         offset="0"
+         id="stop6830" />
+      <stop
+         style="stop-color:#dd8664;stop-opacity:1"
+         offset="1"
+         id="stop6832" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6828"
+       id="linearGradient6834"
+       x1="-100"
+       y1="-988.36218"
+       x2="-64"
+       y2="-988.36218"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#9d9d9d"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="413.48469"
+     inkscape:cy="49.737187"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer4"
+     showgrid="false"
+     units="px"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-center="true"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:object-paths="true"
+     inkscape:snap-object-midpoints="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4136"
+       empspacing="4" />
+    <sodipodi:guide
+       position="64,-48"
+       orientation="1,0"
+       id="guide4172" />
+    <sodipodi:guide
+       position="192,-32"
+       orientation="1,0"
+       id="guide4235" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="background">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4243"
+       width="64"
+       height="128"
+       x="128"
+       y="0" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4208"
+       width="128"
+       height="128"
+       x="0"
+       y="0" />
+    <rect
+       y="0"
+       x="192"
+       height="128"
+       width="128"
+       id="rect4213"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="lines" />
+  <g
+     inkscape:label="orbit"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-924.36216)">
+    <ellipse
+       inkscape:transform-center-y="-24.00005"
+       inkscape:transform-center-x="24.000005"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:url(#linearGradient6834);stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4174"
+       transform="scale(-1,-1)"
+       cx="-160.00003"
+       cy="-988.36212"
+       rx="115.99997"
+       ry="48.000038" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="bodies">
+    <circle
+       inkscape:transform-center-y="2.3163899e-05"
+       inkscape:transform-center-x="47.999996"
+       r="8.0000229"
+       cy="64.000023"
+       cx="56"
+       id="circle4270"
+       style="opacity:1;fill:#a0a0a0;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="callout">
+    <path
+       inkscape:connector-curvature="0"
+       id="path4258"
+       d="m 44,64 232,0"
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path4456"
+       d="m 216,64 60,0"
+       style="opacity:0.5;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.25098039" />
+    <path
+       style="opacity:0.5;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.25098039"
+       d="m 44,64 60,0"
+       id="path3448"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <circle
+       style="opacity:1;fill:#dd8664;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle6797"
+       cx="43.999977"
+       cy="64.000023"
+       r="3.0000229"
+       inkscape:transform-center-x="47.999996"
+       inkscape:transform-center-y="2.3163899e-05" />
+    <circle
+       style="opacity:1;fill:#648ddd;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle6797-2"
+       cx="276"
+       cy="64"
+       r="3.0000229"
+       inkscape:transform-center-x="47.999996"
+       inkscape:transform-center-y="2.3163899e-05" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="160"
+       y="68"
+       id="text4291"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4293"
+         x="160"
+         y="68"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:center;text-anchor:middle;opacity:0.8">SEMIMAJOR AXIS</tspan></text>
+  </g>
+</svg>
