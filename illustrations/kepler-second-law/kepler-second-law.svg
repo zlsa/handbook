@@ -16,8 +16,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="semimajor-axis.svg"
-   inkscape:export-filename="/home/zlsa/projects/books/ovoh/illustrations/semimajor-axis/semimajor-axis.png"
+   sodipodi:docname="kepler-second-law.svg"
+   inkscape:export-filename="/home/zlsa/projects/books/ovoh/illustrations/kepler-second-law/kepler-second-law.png"
    inkscape:export-xdpi="360"
    inkscape:export-ydpi="360">
   <defs
@@ -52,10 +52,10 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="307.49268"
-     inkscape:cy="51.762227"
+     inkscape:cx="377.55805"
+     inkscape:cy="90.580427"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer2"
      showgrid="false"
      units="px"
      inkscape:object-nodes="true"
@@ -87,7 +87,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -120,12 +120,35 @@
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="lines" />
+     inkscape:label="lines">
+    <path
+       style="fill:#e0e0e0;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 51,80 5,-16 76,46.42969 -28.07321,-4.41025 -32.019762,-10.790768 z"
+       id="path3641"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:#e0e0e0;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 254.21712,36 56,64 269.36392,48 Z"
+       id="path4470"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
   <g
      inkscape:label="orbit"
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-924.36216)">
+    <ellipse
+       ry="48.000038"
+       rx="115.99997"
+       cy="-988.36212"
+       cx="-160.00003"
+       transform="scale(-1,-1)"
+       id="ellipse4443"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="24.000005"
+       inkscape:transform-center-y="-24.00005" />
     <ellipse
        inkscape:transform-center-y="-24.00005"
        inkscape:transform-center-x="24.000005"
@@ -148,72 +171,51 @@
        cy="64.000023"
        cx="56"
        id="circle4270"
-       style="opacity:1;fill:#a0a0a0;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#a0a0a0;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       style="opacity:1;fill:#a0a0a0;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle4585"
+       cx="264"
+       cy="64.000023"
+       r="2.0000229"
+       inkscape:transform-center-x="47.999996"
+       inkscape:transform-center-y="2.3163899e-05" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="callout">
-    <path
-       sodipodi:nodetypes="ccc"
-       inkscape:connector-curvature="0"
-       id="path6845"
-       d="M 172,88 148,88 124,64"
-       style="opacity:0.5;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.25098039" />
-    <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect3425"
-       width="112"
-       height="14"
-       x="176"
-       y="80" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path4258"
-       d="m 44,64 116,0"
-       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="opacity:0.5;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.25098039"
-       d="m 44,64 116,0"
-       id="path3448"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <circle
-       style="opacity:1;fill:#dd8664;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="circle6797"
-       cx="43.999977"
-       cy="64.000023"
-       r="3.0000229"
-       inkscape:transform-center-x="47.999996"
-       inkscape:transform-center-y="2.3163899e-05" />
-    <circle
-       style="opacity:1;fill:#648ddd;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="circle6797-2"
-       cx="276"
-       cy="64"
-       r="3.0000229"
-       inkscape:transform-center-x="47.999996"
-       inkscape:transform-center-y="2.3163899e-05" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="228"
-       y="92"
-       id="text4291"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4293"
-         x="228"
-         y="92"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:center;text-anchor:middle;opacity:0.8">SEMIMAJOR AXIS</tspan></text>
     <circle
        inkscape:transform-center-y="2.3163899e-05"
        inkscape:transform-center-x="47.999996"
        r="3.0000229"
-       cy="64.000023"
-       cx="160"
-       id="circle4372"
-       style="opacity:1;fill:#c0c0c0;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       cy="80"
+       cx="51"
+       id="circle3639"
+       style="opacity:1;fill:#dd8664;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       inkscape:transform-center-y="2.3163899e-05"
+       inkscape:transform-center-x="47.999996"
+       r="3.0000229"
+       cy="110.42969"
+       cx="132"
+       id="circle4445-3"
+       style="opacity:1;fill:#648ddd;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       inkscape:transform-center-y="2.3163899e-05"
+       inkscape:transform-center-x="47.999996"
+       r="3.0000229"
+       cy="48"
+       cx="269.36392"
+       id="circle4466"
+       style="opacity:1;fill:#648ddd;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       style="opacity:1;fill:#648ddd;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle4468"
+       cx="254.21712"
+       cy="36"
+       r="3.0000229"
+       inkscape:transform-center-x="47.999996"
+       inkscape:transform-center-y="2.3163899e-05" />
   </g>
 </svg>
