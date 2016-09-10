@@ -142,6 +142,8 @@
 \cover{../cover/cover-alpha.pdf}
 \end{titlepage}
 
+\tableofcontents
+
 \chapter{Introduction}
 
 \afterchapter
@@ -295,9 +297,9 @@ influence is identical for both the spacecraft and its contents;
 hence, the relative velocity between the spacecraft and its contents
 is zero, creating the illusion of zero-G.
 
-\chapter{Basic Concepts}
+\section{Basic Concepts}
 
-\section{Orbits}
+\subsection{Orbits}
 
 The path that a body traces through space while under the
 gravitational influence of another body is called an orbit. It can be
@@ -343,7 +345,7 @@ unless you’re throwing things very fast, there will only be a tiny
 difference between an elliptical orbit and a simplified parabolic
 trajectory.
 
-\section{Two-body Systems}
+\subsection{Two-body Systems}
 
 In an ideal two-body system, both of the bodies will orbit around
 their common barycenter. This is because both bodies are affecting
@@ -364,7 +366,7 @@ pair is only one 50,000th of an atom away from the Earth’s center of
 mass (CoM). Realistically, the barycenter can be ignored when planning
 most spacecraft missions.
 
-\section{Kepler's Three Laws}
+\subsection{Kepler's Three Laws}
 
 Kepler’s three laws describe the elliptical motion of a body orbiting
 a planet. (Note that these three laws only apply in the case of an
@@ -386,7 +388,7 @@ size of the ellipse.
 
 \illustration{kepler-second-law}
 
-\section{Multi-body Systems}
+\subsection{Multi-body Systems}
 
 The above information is only correct for an idealized two-body
 system. In reality, while your spacecraft may only be orbiting a
@@ -424,7 +426,7 @@ part of planning Earth-based missions since the moon strongly affects
 any satellite or spacecraft orbiting Earth due to its high mass and
 relatively close proximity to the Earth.
 
-\section{Eccentricity}
+\subsection{Eccentricity}
 
 So far, we have only investigated perfectly circular orbits. In
 reality, no orbit is perfectly circular; such an ideal orbit has an
@@ -446,7 +448,7 @@ with a higher velocity. In reality, any spacecraft traveling between
 two bodies will use a hyperbolic trajectory, both when departing the
 first body and when arriving at the second.
 
-\section{Inclination}
+\subsection{Inclination}
 
 Unlike the orbits explained in these diagrams, reality is not
 two-dimensional. Spacecraft must deal with a third dimension:
@@ -489,7 +491,7 @@ Earth’s equator: the closer the launch site is to the equator, the
 less fuel a launch vehicle will need to reach Earth orbit (and
 beyond).
 
-\section{Periapsis and Apoapsis}
+\subsection{Periapsis and Apoapsis}
 
 The periapsis of an orbit is the point at which the spacecraft and
 body are the closest to each other; the apoapsis is simply the
@@ -505,7 +507,7 @@ Since periapsis and apoapsis describe locations relative to the orbit,
 not the parent body, any changes to the orbit will also change the
 periapsis and apoapsis.
 
-\subsection{Semi-major Axis}
+\subsubsection{Semi-major Axis}
 
 The semimajor axis of an orbit is the distance from the periapsis to
 the apoapsis, divided by two. Despite appearing to be derived from the
@@ -517,7 +519,7 @@ periapsis and apoapsis are.
 
 \illustration{semimajor-axis}
 
-\subsection{Orbital Period}
+\subsubsection{Orbital Period}
 
 The period of an orbit is the amount of time it takes to complete one
 full orbit. It can be calculated from the semimajor axis and the mass
@@ -527,7 +529,7 @@ orbit. To adjust the orbital period, the semimajor axis must change;
 this is done by changing the apoapsis and the periapsis by burning
 prograde or retrograde.
 
-\section{Ascending and Descending nodes}
+\subsection{Ascending and Descending nodes}
 
 Every object orbiting a body with an inclination greater than zero
 will have both an ascending node and a descending node in its
@@ -546,14 +548,14 @@ reference, travelling south to north. The descending node simply
 delineates the opposite side of the orbit, where it crosses the plane
 of reference, travelling north to south.
 
-\subsection{Argument of Periapsis}
+\subsubsection{Argument of Periapsis}
 
 The argument of periapsis is the angle, measured starting from the
 ascending node and travelling northwards, to the periapsis. The
 argument of periapsis orients the orbit’s semimajor axis within its
 orbital plane.
 
-\subsection{Longitude of the Ascending Node}
+\subsubsection{Longitude of the Ascending Node}
 
 The longitude of the ascending node is the longitude, relative to the
 parent body’s center of mass, is the longitude directly underneath the
@@ -564,7 +566,7 @@ node will not change as the parent body spins on its axis.
 The longitude of the ascending node is used to orient the orbit
 relative to the parent body.
 
-\section{Mean Anomaly at Epoch}
+\subsection{Mean Anomaly at Epoch}
 
 The mean anomaly at epoch describes the virtual angular position of
 the satellite at a predetermined time (the epoch). The mean anomaly
@@ -577,7 +579,7 @@ account the eccentricity of the orbit, and so provides the direct
 physical angle between the periapsis and the orbiting object at a
 given point in time.
 
-\section{Keplerian Elements}
+\subsection{Keplerian Elements}
 
 When the values for eccentricity, inclination, semimajor axis, the
 argument of periapsis, the longitude of the ascending node, and mean
@@ -589,7 +591,7 @@ external gravitational influences affect the orbit over time,
 Keplerian elements cannot be accurately used for anything beyond an
 ideal two-body system.
 
-\chapter{Orbital Maneuvering}
+\section{Orbital Maneuvering}
 
 \afterchapter
 
@@ -611,7 +613,7 @@ directions. There are a few main categories of orbital maneuvering:
 \item Plane changes (also known as inclination changes)
 \end{enumerate}
 
-\section{Impulsive vs. Finite Maneuvers}
+\subsection{Impulsive vs. Finite Maneuvers}
 
 Any maneuver can be ideally simulated as an impulsive maneuver, a
 maneuver which is completed instantly. In reality, an impulsive
@@ -630,7 +632,7 @@ simplicity. In reality, these maneuvers will take a finite amount of
 time, so the start of the maneuver must be shifted backwards in time
 so that the midpoint of the maneuver is at the proper location.
 
-\section{Orientation}
+\subsection{Orientation}
 
 As you might guess, orientation is critical during orbital maneuvers,
 because most spacecraft have an optimum direction to thrust in. Some
@@ -650,7 +652,7 @@ Very rarely used are radial orientations; a radial-in orientation is
 perpendicular to the orbital trajectory, pointing in the general
 direction of the planet; a radial-out orientation is the opposite.
 
-\section{Periapsis and Apoapsis Adjustments}
+\subsection{Periapsis and Apoapsis Adjustments}
 
 To adjust the periapsis or apoapsis, the spacecraft must be at the
 opposite point in the orbit. For example, to increase the apoapsis,
@@ -673,7 +675,7 @@ of its orbit; then, when it reaches the new altitude at the other side
 of its orbit, it performs another orbit adjustment burn to bring the
 first point to the proper altitude as well.
 
-\section{Orbit Phasing}
+\subsection{Orbit Phasing}
 
 Orbit phasing refers to the timing of a spacecraft within its
 orbit. This is usually required during rendezvous; even if the
@@ -685,7 +687,7 @@ Orbit phasing needs to be performed on every mission that includes a
 rendezvous. However, with the proper planning, it can be performed
 alongside the spacecraft’s altitude adjustment maneuvers.
 
-\section{Plane Changes}
+\subsection{Plane Changes}
 
 A plane change maneuver adjusts the inclination of the spacecraft’s
 orbit. To do so, it must burn in the normal or anti-normal
@@ -708,7 +710,7 @@ satellites into a super-synchronous orbit, with an apoapsis much
 higher than necessary, to reduce the \dv\ requirements of the satellite
 itself.
 
-\section{Oberth Effect}
+\subsection{Oberth Effect}
 
 The Oberth effect describes the counterintuitive fact that a prograde
 burn at periapsis imparts more energy to the spacecraft than one
@@ -718,7 +720,7 @@ of velocity while the spacecraft is moving rapidly will add more
 kinetic energy than if the velocity was added while the spacecraft was
 moving slowly.
 
-\chapter{Orbital Rendezvous}
+\section{Orbital Rendezvous}
 
 \afterchapter
 
