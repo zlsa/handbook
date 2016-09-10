@@ -10,8 +10,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="320"
-   height="128"
-   viewBox="0 0 320 128"
+   height="64"
+   viewBox="0 0 320 64"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -28,12 +28,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="235.37105"
-     inkscape:cy="93.149183"
+     inkscape:zoom="1"
+     inkscape:cx="241.76924"
+     inkscape:cy="50.151403"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
+     showgrid="false"
      units="px"
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
@@ -64,61 +64,63 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="background">
+     inkscape:label="background"
+     transform="translate(0,-64)">
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4208"
        width="320"
-       height="128"
+       height="64"
        x="0"
-       y="0" />
+       y="64" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="angles" />
+     inkscape:label="angles"
+     transform="translate(0,-64)" />
   <g
      inkscape:label="text"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-924.36216)">
+     transform="translate(0,-988.36216)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;opacity:1;fill:#dd8664;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="160"
-       y="984.36212"
+       y="1016.3622"
        id="text4291"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4293"
          x="160"
-         y="984.36212"
+         y="1016.3622"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:center;text-anchor:middle;opacity:0.8;fill:#dd8664;fill-opacity:1">ILLUSTRATION</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text3621"
-       y="1001.3621"
+       y="1033.3622"
        x="160"
        style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;opacity:1;fill:#dd8664;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono Bold';text-align:center;text-anchor:middle;opacity:0.8;fill:#dd8664;fill-opacity:1"
-         y="1001.3621"
+         y="1033.3622"
          x="160"
          id="tspan3623"
          sodipodi:role="line">COMING SOON</tspan></text>
     <rect
        ry="11.999977"
        rx="11.999977"
-       y="932.36218"
+       y="996.36218"
        x="8"
-       height="111.99998"
+       height="48.000023"
        width="304"
        id="rect5683"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#dd8664;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:0;stroke-opacity:0.50196078" />
