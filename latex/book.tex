@@ -16,7 +16,7 @@
 
 \setmainfont{PT Serif}
 
-\newfontfamily\headingfont[]{Montserrat}
+\newfontfamily\headingfont[]{Roboto Slab}
 \newfontfamily\monofont[]{Roboto Mono}
 
 \definecolor{blue}{HTML}{648DDD}
@@ -26,10 +26,10 @@
 
 % Set up the proper fonts
 
-\titleformat{\chapter}[display]{}{}{5pt}{\color{blue}\huge\bf\headingfont\MakeUppercase}[]
-\titleformat{\section}[display]{}{}{5pt}{\color{dark-gray}\Large\bf\headingfont\MakeUppercase}[]
-\titleformat{\subsection}[display]{}{}{4pt}{\color{light-gray}\large\bf\headingfont\MakeUppercase}[]
-\titleformat{\subsubsection}[display]{}{}{3pt}{\color{white-gray}\large\bf\headingfont\MakeUppercase}[]
+\titleformat{\chapter}[hang]{}{\color{blue}\huge\bf\headingfont\MakeUppercase\thechapter. }{5pt}{\color{blue}\huge\bf\headingfont\MakeUppercase}[]
+\titleformat{\section}[hang]{}{\color{dark-gray}\Large\bf\headingfont\MakeUppercase\thesection. }{5pt}{\color{dark-gray}\Large\bf\headingfont\MakeUppercase}[]
+\titleformat{\subsection}[hang]{}{\color{light-gray}\large\bf\headingfont\MakeUppercase\thesubsection. }{4pt}{\color{light-gray}\large\bf\headingfont\MakeUppercase}[]
+\titleformat{\subsubsection}[hang]{}{\color{white-gray}\large\bf\headingfont\MakeUppercase\thesubsubsection. }{3pt}{\color{white-gray}\large\bf\headingfont\MakeUppercase}[]
 
 % Set up proper vertical spacing
 
@@ -316,11 +316,9 @@ mountain, it would immediately fall down until it hit the mountain; if
 you threw it as hard as you could it would fly forwards a little, but
 it would still hit the mountain.
 
-\begin{figure}[!h]
-  \begin{center}
-    \widthillustration{0.5\linewidth}{newton-cannonball}
-  \end{center}
-\end{figure}
+\begin{center}
+  \widthillustration{0.5\linewidth}{newton-cannonball}
+\end{center}
 
 \vspace{-2em}
 
