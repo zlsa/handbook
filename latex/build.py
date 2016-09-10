@@ -2,10 +2,9 @@
 
 import os
 import datetime
-import shutil
 
 def compress():
-  os.system('gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -o book-compressed.pdf book.pdf')
+  os.system('gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -o tex-files/book-compressed.pdf tex-files/book.pdf')
 
 def build():
   os.system('xelatex -output-directory tex-files/ book.tex')
