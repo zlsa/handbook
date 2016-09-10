@@ -143,7 +143,13 @@
 \cover{../cover/cover-alpha.pdf}
 \end{titlepage}
 
-\tableofcontents*
+\makeatletter
+\renewcommand\tableofcontents{%
+  \@starttoc{toc}%
+}
+\makeatother
+
+\tableofcontents
 
 \chapter{Introduction}
 
