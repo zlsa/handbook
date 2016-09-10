@@ -1,0 +1,520 @@
+
+\chapter{Orbital Mechanics}
+
+\section{Delta-V}
+
+Delta-v, dV, or \dv\ (short for delta velocity), is simply the
+difference in velocity between two states. For example, imagine your
+spacecraft is floating in space, with no other bodies to affect it; to
+quantifiably measure \dv\ , a part of the spacecraft is separated from
+the rest of the spacecraft. Because of Newton's first law, it will
+simply coast alongside the spacecraft; the current \dv\ between the
+spacecraft and the part that was left behind is 0 meters per second.
+
+Now imagine a rocket engine on the spacecraft is ignited. The
+spacecraft will start to fly away from the part that was left
+behind. When the engine is shut down, the \dv\ of the burn is simply the
+difference in velocity between the piece of your spacecraft (which is
+equivalent to the velocity of the spacecraft before the burn) and your
+spacecraft after the burn. \dv\ is almost always measured in meters per
+second.
+
+\illustration{delta-v}
+
+\dv\ does not measure distance; it measures only a difference in
+velocity. The energy required for maneuvers and engine burns is
+measured in \dv\ , providing a vehicle-agnostic measurement of the amount
+of energy required.
+
+\section{Gravity}
+
+While a spacecraft is in orbit, gravity is still acting upon it even
+though it may appear to be ``weightless''. This is because the
+spacecraft, along with its crew and cargo, are all affected only by
+gravity, without any friction; since the external gravitational
+influence is identical for both the spacecraft and its contents;
+hence, the relative velocity between the spacecraft and its contents
+is zero, creating the illusion of zero-G.
+
+\section{Basic Concepts}
+
+\subsection{Orbits}
+
+The path that a body traces through space while under the
+gravitational influence of another body is called an orbit. It can be
+tricky to understand at first, since orbits, by necessity, do not work
+on the surface of a planet, so for most people, there is nothing to
+base orbital knowledge on.
+
+A simple way to visualize an orbit is called Newton's Cannonball. The
+thought experiment involves a small planet with a large mountain; on
+the very top of this mountain is a cannon, pointed horizontally (not
+at the horizon; since the cannon is on a mountain, the horizon would
+be below horizontal). If you were to just drop a cannonball from the
+mountain, it would immediately fall down until it hit the mountain; if
+you threw it as hard as you could it would fly forwards a little, but
+it would still hit the mountain.
+
+\begin{center}
+  \widthillustration{0.5\linewidth}{newton-cannonball}
+\end{center}
+
+\vspace{-2em}
+
+Now, if you put the cannonball into the cannon and fired the cannon,
+the cannonball would travel very far indeed, but it would eventually
+hit the ground, many miles downrange from the mountain. If you had a
+light enough cannonball and a small enough planet, you would be able
+to fire a cannonball so fast that it would travel forwards as it fell
+``around'' the planet. As the cannonball falls towards the planet, its
+momentum carries it forwards. In the absence of an atmosphere, there
+would be no air friction; so the cannonball would stay in orbit
+forever. (However, as a side note, the cannonball would circle around
+the planet and strike the cannon from the other side. Since no forces
+have acted on the cannonball other than the planet, its path will not
+change during its orbit, so it will arrive exactly where it started
+from, but with a lot of velocity.)
+
+Technically, when you throw a ball into the air, the ball is in a
+highly elliptical orbit with an apoapsis within the atmosphere; it has
+a definite periapsis and apoapsis. However, the Earth is so large that
+unless you're throwing things very fast, there will only be a tiny
+difference between an elliptical orbit and a simplified parabolic
+trajectory.
+
+\subsection{Two-body Systems}
+
+In an ideal two-body system, both of the bodies will orbit around
+their common barycenter. This is because both bodies are affecting
+each other; no matter how heavy one is and how light the other is, the
+bodies will have a barycenter. As one body gets heavier and the other
+gets lighter, the barycenter will move towards the heavier body;
+however, unless the lighter body has zero mass, the heavier body will
+always be orbiting the shared barycenter.
+
+\illustration{barycenter}
+
+Despite this, in an ideal two-body system featuring a planet (such as
+the Earth or Mars) and a spacecraft, it can usually be simulated as a
+fixed, non-moving body and a spacecraft that orbits around it. For
+example, in an ideal two-body system with a typical crewed spacecraft
+weighing about 8 metric tons orbiting the Earth, the barycenter of the
+pair is only one 50,000th of an atom away from the Earth's center of
+mass (CoM). Realistically, the barycenter can be ignored when planning
+most spacecraft missions.
+
+\subsection{Kepler's Three Laws}
+
+Kepler's three laws describe the elliptical motion of a body orbiting
+a planet. (Note that these three laws only apply in the case of an
+orbit with an eccentricity less than one.)
+
+\begin{enumerate}
+\item The orbit of a body around a planet is an ellipse, with the planet
+  being at one of the two foci of the ellipse.
+\item A line segment connecting the body and the planet sweeps out equal
+  areas during equal areas of time.
+\item The square of the orbital period of a body is proportional to the
+  cube of the semi-major axis of its orbit.
+\end{enumerate}
+
+The first law simply describes the basic shape of any orbit; the
+second describes the time taken to travel around different parts of
+the orbit; and the third states that orbital speed is relative to the
+size of the ellipse.
+
+\illustration{kepler-second-law}
+
+\subsection{Multi-body Systems}
+
+The above information is only correct for an idealized two-body
+system. In reality, while your spacecraft may only be orbiting a
+single planet, that planet is orbiting another body, which may have
+dozens of bodies orbiting it, all of which also have other orbiting
+bodies.
+
+During Earth operations on-orbit, the strongest gravitational
+influences are the Earth, the Moon, the Sun, and Jupiter. The Earth
+and the Moon are high on the list for obvious reasons, as is the
+sun. Jupiter is also on the list because it's an exceptionally heavy
+planet (over three times heavier than Saturn, the next heaviest
+planet). Despite being so far away, it exerts a measurable influence
+on satellites orbiting the Earth, and it must be taken into account
+during the mission planning phase.
+
+\illustration{perturbations}
+
+When a spacecraft is affected by forces not taken into account in an
+ideal two-body system, the orbital trajectory includes
+perturbations. These can be caused by a non-spherical planet (such as
+the earth), an uneven mass distribution of the planet, or other
+planets. Perturbations manifest as slight drifts to the orbit over
+time; the spacecraft may need to perform correction burns as a
+result. The Earth itself isn't perfectly spherical; its gravitational
+force varies depending on the spacecraft's inclination. Of other
+planets, the Earth's moon is very large relative to the Earth for a
+moon; its effects on orbiting spacecraft is marked, and special care
+must be taken during mission planning for lunar perturbations.
+
+Mathematical equations have been developed to quantify the influence
+the moon has on Earth-based spacecraft orbits; together, they are
+called lunar theory. Taking into account lunar theory is an important
+part of planning Earth-based missions since the moon strongly affects
+any satellite or spacecraft orbiting Earth due to its high mass and
+relatively close proximity to the Earth.
+
+\subsection{Eccentricity}
+
+So far, we have only investigated perfectly circular orbits. In
+reality, no orbit is perfectly circular; such an ideal orbit has an
+eccentricity of zero. The more elliptical an orbit is, the higher its
+eccentricity; an orbit with an eccentricity of one is a parabolic
+escape trajectory; and an orbit with an eccentricity greater than one
+is a hyperbolic trajectory.
+
+\illustration{eccentricity}
+
+When a body is orbiting around its parent with a parabolic escape
+trajectory, its speed is the absolute minimum required to escape the
+gravitational influence of its parent; if its speed were any lower,
+the eccentricity would be less than one, and it would remain in orbit
+instead of being flung out.
+
+A hyperbolic trajectory is simply a parabolic escape trajectory, but
+with a higher velocity. In reality, any spacecraft traveling between
+two bodies will use a hyperbolic trajectory, both when departing the
+first body and when arriving at the second.
+
+\subsection{Inclination}
+
+Unlike the orbits explained in these diagrams, reality is not
+two-dimensional. Spacecraft must deal with a third dimension:
+inclination.
+
+When launching from an ideal equatorial launch site, the inclination
+of the resulting orbit can be as low as zero degrees. The ground track
+of a zero-inclination orbit would follow along the equator; if you
+mounted a camera onboard the spacecraft and aimed it at the Earth, the
+equator would always cross through the center of the frame.
+
+\illustration{inclination}
+
+However, no launch sites currently in operation are situated on the
+equator. Cape Canaveral is at 28 degrees north of the equator, while
+Russia's Baikonur Cosmodrome is nearly 46 degrees north of the
+equator. When a spacecraft is launched into orbit, the minimum
+inclination is the same as that of its launch site. This is a large
+part of the decision to build the ISS at 51.6 degrees inclination,
+since Russia's launch site is located at 46 degrees north; if the
+inclination of the ISS was lower than 46 degrees, Russia would not be
+able to easily launch their spacecraft to the ISS.
+
+There's another factor that must be taken into consideration in
+conjunction with orbital inclination, and that's the velocity of the
+planet's surface at the launch site. Since the Earth spins along its
+axis once every 23 hours and 56 minutes (one sidereal day), some
+velocity can be taken from the Earth's rotation when launching
+spacecraft. At the equator, the Earth's surface velocity (relative to
+the Sun and Earth's center of mass) is 464 meters per second
+(m/s). The further the launch site is from the equator, the less
+surface velocity is present. To launch into orbit from a high
+inclination launch site requires more energy from the launch vehicle
+as compared to an equatorial launch site.
+
+\illustration{latitude-velocity}
+
+This is why most launch sites are located as close as possible to the
+Earth's equator: the closer the launch site is to the equator, the
+less fuel a launch vehicle will need to reach Earth orbit (and
+beyond).
+
+\subsection{Periapsis and Apoapsis}
+
+The periapsis of an orbit is the point at which the spacecraft and
+body are the closest to each other; the apoapsis is simply the
+furthest point. Any orbit with an eccentricity greater than one will
+have an apoapsis and a periapsis. The periapsis and apoapsis are
+typically measured from the spacecraft to the surface of the body, to
+simplify matters for the astronauts; however, mathematically, the
+periapsis and apoapsis are measured relative to the barycenter.
+
+\illustration{periapsis-apoapsis}
+
+Since periapsis and apoapsis describe locations relative to the orbit,
+not the parent body, any changes to the orbit will also change the
+periapsis and apoapsis.
+
+\subsubsection{Semi-major Axis}
+
+The semi-major axis of an orbit is the distance from the periapsis to
+the apoapsis, divided by two. Despite appearing to be derived from the
+periapsis and apoapsis, the semi-major axis is the root from which
+those are derived; since an orbit with an eccentricity less than one
+is an ellipse with the parent body at one of the foci, the semi-major
+axis is generally more useful for orbital calculations than the
+periapsis and apoapsis are.
+
+\illustration{semimajor-axis}
+
+\subsubsection{Orbital Period}
+
+The period of an orbit is the amount of time it takes to complete one
+full orbit. It can be calculated from the semi-major axis and the mass
+of the parent body. Due to Newton's laws, a higher orbit (with a
+larger semi-major axis) will have a longer period than that of a lower
+orbit. To adjust the orbital period, the semi-major axis must change;
+this is done by changing the apoapsis and the periapsis by burning
+prograde or retrograde.
+
+\subsection{Ascending and Descending nodes}
+
+Every object orbiting a body with an inclination greater than zero
+will have both an ascending node and a descending node in its
+orbit. Like the periapsis and apoapsis, the ascending and descending
+nodes are located relative to the orbit and the parent body, so any
+changes to the orbit will also change the ascending and descending
+node.
+
+Ascending and descending nodes only work if the parent body has an
+equator. The imaginary plane extending out in all directions from the
+equator of the parent body is called the plane of reference; it
+applies to any satellites orbiting the body.
+
+The ascending node is the point where the orbit crosses the plane of
+reference, traveling south to north. The descending node simply
+delineates the opposite side of the orbit, where it crosses the plane
+of reference, travel-ling north to south.
+
+\subsubsection{Argument of Periapsis}
+
+The argument of periapsis is the angle, measured starting from the
+ascending node and travel-ling northwards, to the periapsis. The
+argument of periapsis orients the orbit's semi-major axis within its
+orbital plane.
+
+\subsubsection{Longitude of the Ascending Node}
+
+The longitude of the ascending node is the longitude, relative to the
+parent body's center of mass, is the longitude directly underneath the
+ascending node. It is measured relative to the parent body's center of
+mass, not its surface; this means that the longitude of the ascending
+node will not change as the parent body spins on its axis.
+
+The longitude of the ascending node is used to orient the orbit
+relative to the parent body.
+
+\subsection{Mean Anomaly at Epoch}
+
+The mean anomaly at epoch describes the virtual angular position of
+the satellite at a predetermined time (the epoch). The mean anomaly
+does not describe a physical angle, except in the case of a perfectly
+circular orbit; because of Kepler's third law, any orbit with an
+eccentricity greater than zero will have a non-uniform orbital
+velocity. Mean anomaly will therefore ``drift'' during the orbit; so
+it must first be converted into true anomaly. True anomaly takes into
+account the eccentricity of the orbit, and so provides the direct
+physical angle between the periapsis and the orbiting object at a
+given point in time.
+
+\subsection{Keplerian Elements}
+
+When the values for eccentricity, inclination, semi-major axis, the
+argument of periapsis, the longitude of the ascending node, and mean
+anomaly at epoch are combined, the exact position of the spacecraft in
+space can be calculated at any time. Together, these six values are
+called the orbit's Keplerian elements. They only apply to an ideal
+two-body system, with no external gravitational influences. Since
+external gravitational influences affect the orbit over time,
+Keplerian elements cannot be accurately used for anything beyond an
+ideal two-body system.
+
+\section{Orbital Maneuvering}
+
+Maneuvering in orbit is a critical component of any spacecraft
+operation, and is required for orbital rendezvous and docking as well
+as deorbit operations. It is also essential during any mission that
+flies beyond low earth orbit.
+
+Orbital mechanics make maneuvering difficult and counter-intuitive.
+
+All orbital maneuvers simply adjust your orbit, albeit in different
+directions. There are a few main categories of orbital maneuvering:
+
+\vspace{2em}
+
+\begin{enumerate}
+\item Periapsis and apoapsis adjustments (changing your altitude)
+\item Orbit phasing (adjusting the duration, or period, of your orbit)
+\item Plane changes (also known as inclination changes)
+\end{enumerate}
+
+\subsection{Impulsive vs. Finite Maneuvers}
+
+Any maneuver can be ideally simulated as an impulsive maneuver, a
+maneuver which is completed instantly. In reality, an impulsive
+maneuver is impossible as it would require infinite thrust; however,
+it's a good approximation during mission planning. The analogous
+non-instant maneuver is called a finite maneuver, as it takes a finite
+amount of time to complete.
+
+There are methods to convert an impulsive maneuver into a nearly
+equivalent finite maneuver; thus, most of the mission planning can be
+accomplished with impulse maneuvers, to be converted into finite
+maneuvers after verifying the intermediate orbits.
+
+The following sections will assume impulse maneuvers for
+simplicity. In reality, these maneuvers will take a finite amount of
+time, so the start of the maneuver must be shifted backwards in time
+so that the midpoint of the maneuver is at the proper location.
+
+\subsection{Orientation}
+
+As you might guess, orientation is critical during orbital maneuvers,
+because most spacecraft have an optimum direction to thrust in. Some
+spacecraft have engines that are specifically designed for orbital
+maneuvers, but they only point in one direction. For these reasons,
+spacecraft need to orient themselves while performing orbital
+maneuvers.
+
+Most maneuvers involve orienting the ship either prograde (in the
+direction of movement) or retrograde (the exact opposite of
+prograde). Inclination changes, however, require orientations that
+point transversely relative to the orbital plane (i.e. ``north'' or
+``south'', but relative to the orbital plane). These are called normal
+(for north-facing) and anti-normal (for south-facing).
+
+Very rarely used are radial orientations; a radial-in orientation is
+perpendicular to the orbital trajectory, pointing in the general
+direction of the planet; a radial-out orientation is the opposite.
+
+\subsection{Periapsis and Apoapsis Adjustments}
+
+To adjust the periapsis or apoapsis, the spacecraft must be at the
+opposite point in the orbit. For example, to increase the apoapsis,
+the spacecraft must be at the periapsis, then burn prograde until the
+apoapsis reaches the target value. The reverse is true to lower the
+apoapsis.
+
+\illustration{raise-apoapsis}
+
+Since the orbital period depends on the length of the semi-major axis,
+with a larger orbit having a longer orbital period, adjusting the
+periapsis and apoapsis will by necessity also adjust the orbital
+period.
+
+Often, a spacecraft needs to adjust both its periapsis and apoapsis by
+the same amount. Usually, the most efficient method is a Hohmann
+transfer. To perform a Hohmann transfer, the spacecraft first performs
+an orbit adjustment maneuver to change the altitude of the other side
+of its orbit; then, when it reaches the new altitude at the other side
+of its orbit, it performs another orbit adjustment burn to bring the
+first point to the proper altitude as well.
+
+\subsection{Orbit Phasing}
+
+Orbit phasing refers to the timing of a spacecraft within its
+orbit. This is usually required during rendezvous; even if the
+semi-major axes, orbital planes, and eccentricities of the two
+spacecraft are the same, the spacecraft may be a half-orbit
+apart.
+
+Orbit phasing needs to be performed on every mission that includes a
+rendezvous. However, with the proper planning, it can be performed
+alongside the spacecraft's altitude adjustment maneuvers.
+
+\subsection{Plane Changes}
+
+A plane change maneuver adjusts the inclination of the spacecraft's
+orbit. To do so, it must burn in the normal or anti-normal
+directions. Plane change maneuvers are the most expensive maneuver, \dv\ 
+wise. To adjust the inclination of a circular orbit by 90 degrees
+requires nearly as much \dv\ as it took to reach orbit in the first
+place. Plane changes are only performed when they are absolutely
+necessary, such as for satellites that must be in geostationary
+equatorial orbit (GEO). Such satellites must be on the equator, and
+since no launch site is on the equator, they must perform a plane
+change once in orbit.
+
+Since all orbital maneuvering \dv\ is relative to your existing \dv\ ,
+plane changes are more efficient the more eccentric your orbit is,
+provided the plane change maneuver is performed at the apoapsis. It's
+often more efficient to dramatically increase the apoapsis, perform a
+plane change, then lower the apoapsis again instead of performing a
+plane change in-place. Some launch providers will launch GEO
+satellites into a super-synchronous orbit, with an apoapsis much
+higher than necessary, to reduce the \dv\ requirements of the satellite
+itself.
+
+\subsection{Oberth Effect}
+
+The Oberth effect describes the counterintuitive fact that a prograde
+burn at periapsis imparts more energy to the spacecraft than one
+performed at the apoapsis. This is because the kinetic energy in an
+object is the square of its velocity; therefore, adding a fixed amount
+of velocity while the spacecraft is moving rapidly will add more
+kinetic energy than if the velocity was added while the spacecraft was
+moving slowly.
+
+\section{Orbital Rendezvous}
+
+One of the most difficult tasks is rendezvous and docking with another
+spacecraft. It requires a deep understanding of orbital maneuvering,
+the capabilities of your spacecraft, and the ability to precisely
+target another spacecraft in orbit.
+
+To understand orbital rendezvous, it's simpler to first work backwards
+from a spacecraft that's already docked to a space station. Their
+orbits are completely identical, and their speeds are matched up
+perfectly.
+
+First, the spacecraft must undock from the space station. This is
+usually performed by sealing the hatch from both sides, unlocking the
+docking port, then using electromechanical pushers to mechanically
+separate the two. After some coast time, the spacecraft is far enough
+away from the space station to use its RCS thrusters.
+
+At this point, the spacecraft will begin a series of Hohmann
+transfers, reducing its altitude (and increasing its distance to the
+space station at the same time). This is done to minimize RCS thruster
+usage while the spacecraft is still near the space station. From an
+observer on the space station, the spacecraft will appear to fall
+towards the planet and start moving retrograde.
+
+Now, the spacecraft is in a separate orbit, lower and faster than that
+of the space station. The spacecraft has just performed the opposite
+of a rendezvous; the only difference is that a departure is typically
+faster than a rendezvous, as there's less chance of approaching the
+space station too closely.
+
+The reverse of spacecraft departure is spacecraft rendezvous. Now, the
+spacecraft is in the exact same low, fast orbit that is needed to
+begin orbital rendezvous; with the space station in a higher, slower
+orbit. The orbital planes are parallel; if not, a plane change
+maneuver will have to be made.
+
+The spacecraft now performs a series of Hohmann transfers, to raise
+its orbit to that of the space station. The timing of these transfers
+is critical, since the orbital phasing is being adjusted at the same
+time. During the maneuvering, the spacecraft is communicating with
+both the space station and ground controllers, who watch the position
+to make sure the spacecraft will not pass too close to the space
+station.
+
+As the spacecraft approaches the space station from below, it performs
+several small burns to match orbits nearly perfectly, then maneuvers
+itself around the space station to a docking port; despite the close
+proximity of the spacecraft and the space station, orbital mechanics
+still applies, and care must be taken that the spacecraft remains in
+the same position relative to the space station.
+
+The only thing that remains is to dock with the space station; this is
+usually fully automated, like rendezvous; during the docking
+procedure, the spacecraft will use its onboard docking camera to track
+visual targets on the space station's docking port.
+
+When the spacecraft contacts the docking port, petal-shaped flaps
+align the two docking ports; hooks extend to lock the two together,
+and connectors for air and electricity are connected and opened. Soon
+afterwards, the hatches on both sides are opened and crew members may
+board the space station.
+

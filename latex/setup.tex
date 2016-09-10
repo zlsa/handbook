@@ -1,0 +1,230 @@
+\documentclass[oneside,a5paper]{book}
+\usepackage[margin={15mm,20mm},footskip=12mm]{geometry}
+
+\usepackage{nameref}
+
+% For colors
+\usepackage{xcolor}
+
+% For the glossary
+
+%\usepackage[toc,acronym,xindy]{glossaries}
+
+%\usepackage{xparse}
+
+%\DeclareDocumentCommand{\newdualentry}{ O{} O{} m m m m } {
+%  \newglossaryentry{gls-#3}{name={#5},text={#5\glsadd{#3}},
+%    description={#6},#1
+%  }
+%  \makeglossaries
+%  \newacronym[see={[Glossary:]{gls-#3}},#2]{#3}{#4}{#5\glsadd{gls-#3}}
+%}
+
+% Uppercase and titles
+
+\usepackage{textcase}
+\usepackage{titlesec}
+
+\usepackage{scrextend}
+
+% For configurable margins on titlepage
+
+\usepackage{enumitem}
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+% Set up PT Serif and Montserrat
+\usepackage{xltxtra}
+\usepackage{fontspec}
+
+\setmainfont{PT Serif}
+
+\newfontfamily\sansfont[]{Roboto}
+\newfontfamily\titlefont[]{Asap}
+\newfontfamily\headingfont[]{Asap}
+\newfontfamily\monofont[]{Roboto Mono}
+
+\definecolor{blue}{HTML}{648DDD}
+\definecolor{orange}{HTML}{DC8563}
+\definecolor{shadecolor}{HTML}{dd8664}
+\definecolor{dark-gray}{gray}{0.2}
+\definecolor{light-gray}{gray}{0.35}
+\definecolor{white-gray}{gray}{0.5}
+
+% URLs
+
+\usepackage[hidelinks,xetex]{hyperref}
+
+% Set up the proper fonts
+
+\newcommand{\headersetup}[2]{\color{#1}#2\bf\headingfont\MakeUppercase}
+
+\titleformat{\chapter}[hang]{}{\headersetup{blue}{\huge}\thechapter. }{5pt}{\headersetup{blue}{\huge}}[]
+\titleformat{\section}[hang]{}{\headersetup{dark-gray}{\Large}\thesection. }{5pt}{\headersetup{dark-gray}{\Large}}[]
+\titleformat{\subsection}[hang]{}{\headersetup{light-gray}{\large}\thesubsection. }{4pt}{\headersetup{light-gray}{\large}}[]
+\titleformat{\subsubsection}[hang]{}{\headersetup{white-gray}{\large}\thesubsubsection. }{4pt}{\headersetup{white-gray}{\large}}[]
+
+% Set up proper vertical spacing
+
+\titlespacing*{\chapter}{0pt}{-5ex}{0.5ex plus .5ex}
+\titlespacing*{\section}{0pt}{5ex plus 1ex minus .2ex}{0.6ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{3ex plus 1ex minus .2ex}{0.5ex plus .2ex}
+\titlespacing*{\subsubsection}{0pt}{2ex plus 1ex minus .2ex}{0.5ex plus .2ex}
+
+% Disable new page on chapters
+
+\usepackage{etoolbox}
+
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+\patchcmd{\chapter}{\clearpage}{}{}{}
+
+% Set line spacing to a larger value
+
+\linespread{1.25}
+
+% Change paragraph separation method
+
+\setlength{\parskip}{4pt}%
+
+% Prepare for the full-bleed cover
+
+\usepackage{wallpaper}
+\usepackage[absolute,overlay]{textpos}
+
+\newcommand{\cover}[1]{
+  
+  \pagenumbering{gobble}
+
+  \newgeometry{margin=1cm}
+  
+  \parindent 0pt
+  
+  %\ThisCenterWallPaper{1.85}{#1}
+
+  {
+    \color{light-gray}
+    
+    \begin{itemize}[leftmargin=0pt]
+    \item[] \textbf{\headingfont\large\MakeUppercase{This all-in-one guide covers:}}
+    \item[] \sansfont\MakeUppercase{Spacecraft Components}
+    \item[] \sansfont\MakeUppercase{Orbital Mechanics}
+    \item[] \sansfont\MakeUppercase{Station Rendezvous}
+    \item[] \sansfont\MakeUppercase{Mission Operations}
+    \item[] \sansfont\MakeUppercase{Planetary Operations}
+    \end{itemize}
+  }
+
+  \vspace{\fill}
+
+  % The "Alpha label"
+
+  { 
+    \fontsize{25pt}{3}
+    \bf
+    \color{orange}
+    \titlefont
+    \MakeUppercase{Alpha}
+  }
+
+  \vspace{4em}
+  
+  {
+    \color{light-gray}
+    \rule[0mm]{1cm}{0.2cm}
+  }
+  
+  \vspace{1ex}
+  
+  % The header
+  
+  { 
+    \color{dark-gray}
+    
+    \fontsize{31pt}{3}
+    \bf
+    \titlefont
+    \MakeUppercase{Orbital Vehicle\vspace{0.5ex}\\Operations Handbook}
+  }
+
+  \vspace{1em}
+  
+  % The bottom footer text, now
+
+  {
+    \color{light-gray}\bf\fontsize{8pt}{10pt}\monofont\MakeUppercase\today
+    \hspace{\fill}
+    \color{light-gray}\bf\fontsize{8pt}{10pt}\monofont\projectlink
+  }
+
+  \restoregeometry
+  \newpage\null
+  \pagenumbering{arabic}
+  \parindent 2.5em
+
+}
+
+% Prepare for the illustrations
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+% Set up page numbers
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\rhead{}
+\fancyfoot[C]{\textbf{\large\thepage}}
+
+% Remove the silly line
+
+\renewcommand{\headrulewidth}{0pt}
+
+% Remove enumeration spacing
+
+\usepackage{enumitem}
+\setlist{nolistsep}
+
+%%%%%%%%%%%%%%%%%%%%
+% CUSTOM MACROS
+%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\link}[2]{\monofont\color{blue}\href{#1}{\textbf{#2}}}
+
+% Define social links
+
+\newcommand{\reddit}[1]{{\link{https://reddit.com/u/#1}{u/#1}}}
+\newcommand{\twitter}[1]{{\link{https://twitter.com/#1}{@#1}}}
+\newcommand{\email}[1]{{\link{mailto:#1}{#1}}}
+
+% Define the \dv command
+
+\newcommand{\dv}{$\Delta$\hspace{-0.2ex}V}
+
+% Define the illustration command
+
+\newcommand{\widthillustration}[2]{
+  \begin{figure}[!ht]
+    {\centering\includegraphics[width=#1]{../illustrations/#2/#2.png}}
+  \end{figure}
+}
+\newcommand{\illustration}[1]{\widthillustration{\linewidth}{#1}}
+\newcommand{\illustrationsoon}{\illustration{coming-soon}}
+
+% Define vspace after chapters
+
+\newcommand{\afterchapter}{\vspace{1em}}
+
+% Project link macro.
+
+\newcommand{\projectlink}{\href{https://zlsa.github.io/handbook/}{\MakeTextUppercase{zlsa.github.io/handbook}}}
+
+\newcommand{\colorref}[2]{\hyperref[#1]{\color{orange}#2}}
+\newcommand{\seeref}[1]{see \colorref{#1}{\textbf{\nameref{#1}}}, on page \pageref*{#1}}
+\newcommand{\linkref}[2]{\colorref{#1}{\textbf{#2}}}
+% And here we go.
+

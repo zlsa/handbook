@@ -8,22 +8,14 @@ def compress():
   os.system('gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -o book-compressed.pdf book.pdf')
 
 def build():
-  os.system('xelatex book.tex')
+  os.system('xelatex -output-directory tex-files/ book.tex')
+  #os.chdir('tex-files')
+  #os.system('makeglossaries book.glo')
+  #os.chdir('..')
 
 def dotdate():
   now = datetime.datetime.now()
   return '.'.join([str(now.year), str(now.month).zfill(2), str(now.day).zfill(2)])
 
-output_prefix = '../book/'
-output_filenames = [
-  output_prefix + 'OrbitalVehicleOperationsHandbook.' + dotdate() + '.pdf',
-  output_prefix + 'OrbitalVehicleOperationsHandbook.pdf'
-]
-
-build()
-build()
-build()
-compress()
-
-for filename in output_filenames:
-  shutil.copyfile('./book-compressed.pdf', filename)
+if __name__ == '__main__':
+  build()

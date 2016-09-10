@@ -1,0 +1,231 @@
+
+\chapter{Planetary Operations}
+
+\section{Departing from a planet}
+
+To depart from a planet, the spacecraft must be in an orbit with an
+eccentricity greater or equal to one; i.e. a hyperbolic orbit. The
+maneuver used to raise the apogee beyond the planet's sphere of
+influence is called an escape burn.
+
+Escape burns are more efficient at the periapsis of the spacecraft's
+orbit due to the Oberth effect; to perform an escape burn, the
+spacecraft simply raises its apogee until the eccentricity of its
+orbit is greater than or equal to one. Escape burns must be precisely
+plotted ahead-of-time to ensure the escape trajectory intersects the
+destination planet at the right time, angle, and speed.
+
+\section{Arriving at a Planet}
+
+When arriving at a planet, the spacecraft will be on a hyperbolic
+trajectory. With no further corrections, the spacecraft will either
+swing around the planet and begin to fly away from the planet (a
+``flyby'') or enter the atmosphere (if present) and crash into the
+surface at high speeds.
+
+A flyby might sound like a poor plan for any mission; however, it's
+commonly used on unmanned missions that have a very limited mass
+budget. Since a flyby uses no fuel (apart from correction burns), the
+spacecraft can be much lighter, providing more extra mass for
+scientific instruments and other additions.
+
+Most manned spacecraft must either descend to the surface of the
+planet or enter an orbit around the planet. The former requires less
+fuel, but since the spacecraft cannot delay landing in the case of a
+hardware fault, it's also riskier.
+
+\subsection{Entering Orbit}
+
+To enter into an orbit around a planet, the spacecraft must perform a
+capture maneuver which slows the vehicle down at its periapsis. To do
+so, it must use some combination of a retrograde engine burn and
+aerobraking.
+
+\subsubsection{Retrograde Engine Burn}
+
+A retrograde engine burn capture is performed by orienting the
+spacecraft retrograde, then performing a long engine burn at periapsis
+to reduce the spacecraft's apoapsis. This method does not require a
+heatshield and works on planets without atmospheres.
+
+\subsubsection{Aerobraking}
+
+Aerobraking is a maneuver which uses the atmosphere of a planet to
+lower the spacecraft's apogee without landing. The spacecraft must
+have a shield of some sort to dissipate the heat generated during
+atmospheric flight, and the planet must have an atmosphere to brake
+against.
+
+This method is far superior to an engine burn in terms of mass
+penalty, but it imposes strict limits on the spacecraft's design, as
+it must withstand very high G-forces. In addition, the spacecraft
+trajectory must be accurately controlled to ensure a precise orbit
+after the maneuver. This is because atmospheres vary over time, and
+the overall braking force can't be calculated accurately beforehand.
+
+\section{Landing on a Planet}
+
+To land on a planet, there are three distinct steps that must be
+performed (assuming the spacecraft is currently in low orbit around
+the planet).
+%
+First, the spacecraft must lower its periapsis to an altitude that's
+appropriate for the chosen method of braking (either with a
+\linkref{subsec:deorbiting}{deorbit burn} or from an interplanetary
+hyperbolic trajectory);
+%
+then, the spacecraft must reduce its orbital velocity through
+\linkref{subsubsec:atmospheric-entry}{atmospheric entry} or with a
+\linkref{subsubsec:braking-burn}{braking burn};
+%
+and finally, the spacecraft must slow itself down to speeds
+appropriate for a soft landing.
+
+\subsection{Deorbiting}
+
+Before a spacecraft can land, its orbit must pass close to the
+surface. In the case of a planet with an atmosphere, the orbit does
+not need to intersect the surface, since the atmosphere will naturally
+slow down the spacecraft as it descends towards the surface. On
+planets without atmospheres, such as the moon, the deorbit burn is
+split into two parts; first, the spacecraft performs a
+periapsis-lowering burn to bring the periapsis closer to the surface;
+the second part of the deorbit burn, the braking burn, is used to
+reduce the spacecraft's orbital speed to zero and land on the planet's
+surface.
+
+Deorbiting a spacecraft is relatively simple: the spacecraft must
+perform a retrograde burn maneuver at the apoapsis that lowers the
+periapsis. If an atmosphere is present, the deorbit burn also
+fine-tunes the entry trajectory.
+
+\subsubsection{Atmospheric Entry}
+\label{subsubsec:atmospheric-entry}
+
+Atmospheric entry is essentially an aerobraking pass that reduces the
+spacecraft's velocity enough to bring the periapsis and apoapsis into
+the atmosphere.
+
+\illustration{reentry-capsule-control}
+
+When the spacecraft reaches the atmospheric interface, it will engage
+active entry guidance. Every modern crewed spacecraft is capable of
+guided entry; even capsule-derived spacecraft can control their
+trajectory with an offset center of mass and precisely controlled roll
+around the vertical axis. Most spaceplanes perform wide S-turns to
+decrease peak G-forces.
+
+% S-turns illustration
+
+\illustrationsoon
+
+During the time of peak heating and G-forces on the spacecraft,
+communications will cut out as a consequence of the superheated plasma
+surrounding the spacecraft; communications blackout typically lasts
+only a few minutes. During this time, the spacecraft experiences high
+G-forces, typically in the range of 3-5 Gs (that is, 3-5 times more
+force than on Earth); spaceplanes usually experience less G-force as a
+virtue of their increased lift-to-drag ratio. Every crewed spacecraft
+is designed for these forces, and furthermore, they're designed to
+safely and comfortably secure the astronauts during this time.
+
+\subsubsection{Braking Burn}
+\label{subsubsec:braking-burn}
+  
+Atmospheric entry is only possible on planets with atmospheres;
+planets such as the Moon don't have any atmosphere to slow down
+incoming spacecraft, so aerobraking isn't possible on the Moon. For
+landing on planets without atmospheres, a long braking burn is
+necessary to bleed off the spacecraft's orbital velocity.
+
+% ??? Insert braking burn image here
+
+\illustrationsoon
+
+Braking burns can also be used during atmospheric entry, for
+additional drag and braking force; this is known as
+``retropropulsion''.
+
+While Mars has a very thin atmosphere---less than 1\% of
+Earth's---it's still enough to slow down incoming spacecraft to a
+fraction of their orbital velocity. However, parachutes by themselves
+can't be used on Mars for landing; since aerodynamic drag is based on
+the square of the velocity, a parachute with twice the area won't slow
+the vehicle down to half the speed. Spacecraft landings on Mars are
+typically parachute-assisted or fully propulsive.
+
+\section{Planetary Landing}
+\label{ch:planetary-landing}
+
+\afterchapter
+
+Successfully landing on a planet requires a set of steps to be
+performed with precise timing. The steps required for a landing change
+if the planet has no atmosphere; for example, aerobraking and
+parachutes are rendered useless, so all braking must be performed
+propulsively.
+
+\section{Landing}
+
+\subsection{Parachute Splashdown/Airbag Assist}
+
+Most modern capsule-derived spacecraft use parachutes for a splashdown
+in the ocean or an airbag or rocket-assisted land landing. This method
+is reliable and proven, and is relatively simple compared to other
+choices. This method deploys drogue chutes after the capsule
+decelerates to subsonic velocities, then uses the drogue chutes to
+pull out the main chutes, of which there are usually three or
+four. After a few minutes of slow descent under the parachute canopy,
+the capsule either splashes down in the ocean or deploys airbags or
+rocket motors, to soften a land-based touchdown.
+
+Parachute landings are the tried-and-true technique, but they suffer
+from difficult recoveries (in the case of ocean splashdowns) and hard
+landings, even when airbag or rocket-assisted (in the case of land
+landings). Ocean splashdowns also expose the spacecraft to salty ocean
+water only minutes after the spacecraft has been exposed to the
+extreme temperatures of atmospheric entry.
+
+\subsection{Propulsive Landing}
+
+Some next-generation spacecraft feature propulsive landing. Instead of
+using a parachute to reduce their speed, they use multiple onboard
+rocket motors to slow the vehicle down in a precise,
+computer-controlled manner. The primary advantage of propulsive
+landing is the increased accuracy and no chance of tangled parachutes;
+on the other hand, propulsive landing is a relatively new addition to
+crewed capsules, and reliability hasn't been proven yet. In addition,
+propulsive landing does not depend on an atmosphere; propulsive
+landing works just as well on Mars as it does on Earth.
+
+Propulsively-landed spacecraft cannot be landed manually; humans
+simply cannot control the spacecraft quickly or accurately enough for
+a manual landing. Spacecraft with propulsive landing will need to have
+a parachute backup in the near future until the reliability of
+propulsive landing is proven.
+
+\subsection{Spaceplane Runway Landing}
+
+Currently, there are no crewed spaceplane designs; but in the future,
+Sierra Nevada Corporation's {Dream Chaser} vehicle might change
+this. Nevertheless, we will provide a description of what to expect
+when landing a spaceplane on a runway.
+
+Unlike the far simpler parachute splashdowns in the ocean, a runway
+landing requires highly accurate computerized entry guidance, to
+ensure the spacecraft is able to reach the target runway. Furthermore,
+no spaceplane currently in service features atmospheric engines;
+therefore, the flight must be flown unpowered.
+
+As airplanes cannot gain altitude without losing speed, all spaceplane
+entry trajectories must place the spaceplane on a trajectory that
+overflies the runway; after reentry, as the spaceplane slows down from
+hypersonic speeds, it will perform wide S-turns to bleed off speed and
+altitude without gaining as much ground as a direct glide would.
+
+When the spaceplane reaches the appropriate altitude and is aligned to
+the runway, the spaceplane will autonomously descend along the
+glideslope, deploy its landing gear, and rollout along the runway
+automatically. Modern spaceplanes are difficult to control manually,
+so the pilot will only take over in the case of an anomaly with the
+autopilot.
