@@ -20,40 +20,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  /* .title, .author { */
-  /*   color: white; */
-  /*   padding: 24px; */
-  /*   text-transform: uppercase; */
-  /* } */
-  /* .title { */
-  /*   @include font-title(5vh); */
-  /*   padding-top: 3vw; */
-  /*   float: left; */
-  /* } */
-  /* .author { */
-  /*   color: rgba(white, 0.7); */
-  /*   font-family: 'Roboto Mono'; */
-  /*   font-size: 16px; */
-  /*   font-weight: bold; */
-  /*   position: absolute; */
-  /*   bottom: 0; */
-  /*   right: 0; */
-  /*   padding: 24px; */
-  /*   &:hover { */
-  /*     text-decoration: underline; */
-  /*     color: white; */
-  /*   } */
-  /* } */
-  /* .horizontal-center { */
-  /*   clear: both; */
-  /*   width: 100%; */
-  /*   display: flex; */
-  /*   flex-direction: column; */
-  /*   align-items: center; */
-  /*   position: absolute; */
-  /*   bottom: 64px; */
-  /* } */ }
+  align-items: center; }
   #header .logo {
     display: block;
     margin-top: 24px; }
@@ -63,22 +30,24 @@
       background-size: 100% 100%;
       display: block;
       max-width: 90px; }
-  #header .download.pdf img, #header .download.pdf h1 {
-    display: block;
-    max-width: 50vh;
-    margin: 24px 0;
-    border-radius: 1px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 10px 40px rgba(0, 0, 0, 0.4); }
-  #header .download.pdf img {
-    margin-bottom: 0; }
-  #header .download.pdf h1 {
-    background-color: #dd8664;
-    text-align: center;
-    color: white;
-    font-family: Montserrat, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 24px 64px; }
+  #header .download.pdf {
+    margin: 0 auto; }
+    #header .download.pdf img, #header .download.pdf h1 {
+      display: block;
+      max-width: 50vh;
+      margin: 24px 0;
+      border-radius: 1px;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 10px 40px rgba(0, 0, 0, 0.4); }
+    #header .download.pdf img {
+      margin-bottom: 0; }
+    #header .download.pdf h1 {
+      background-color: #dd8664;
+      text-align: center;
+      color: white;
+      font-family: Montserrat, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 24px 64px; }
   #header .docs {
     color: #aaa;
     text-decoration: underline;
@@ -129,3 +98,5 @@ html {
 body {
   min-height: 100%;
   font-family: 'Roboto', sans-serif; }
+
+/*# sourceMappingURL=compiled.css.map */

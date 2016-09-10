@@ -15,55 +15,6 @@
   
   align-items: center;
 
-  /* .title, .author { */
-  /*   color: white; */
-    
-  /*   padding: 24px; */
-    
-  /*   text-transform: uppercase; */
-  /* } */
-
-  /* .title { */
-  /*   @include font-title(5vh); */
-
-  /*   padding-top: 3vw; */
-
-  /*   float: left; */
-  /* } */
-
-  /* .author { */
-  /*   color: rgba(white, 0.7); */
-  /*   font-family: 'Roboto Mono'; */
-  /*   font-size: 16px; */
-  /*   font-weight: bold; */
-
-  /*   position: absolute; */
-  /*   bottom: 0; */
-  /*   right: 0; */
-
-  /*   padding: 24px; */
-
-  /*   &:hover { */
-  /*     text-decoration: underline; */
-  /*     color: white; */
-  /*   } */
-    
-  /* } */
-
-  /* .horizontal-center { */
-  /*   clear: both; */
-    
-  /*   width: 100%; */
-
-  /*   display: flex; */
-  /*   flex-direction: column; */
-
-  /*   align-items: center; */
-
-  /*   position: absolute; */
-  /*   bottom: 64px; */
-  /* } */
-
   .logo {
     display: block;
 
@@ -80,6 +31,8 @@
   }
 
   .download.pdf {
+
+    margin: 0 auto;
 
     img, h1 {
       display: block;
