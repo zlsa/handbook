@@ -5,11 +5,20 @@
 % For colors
 \usepackage{xcolor}
 
+% Uppercase and titles
+
 \usepackage{textcase}
 \usepackage{titlesec}
+
+% URLs
+
 \usepackage[xetex]{hyperref}
 
 \usepackage{scrextend}
+
+% For configurable margins on titlepage
+
+\usepackage{enumitem}
 
 % Set up PT Serif and Montserrat
 \usepackage{xltxtra}
@@ -17,10 +26,14 @@
 
 \setmainfont{PT Serif}
 
-\newfontfamily\headingfont[]{Roboto Slab}
+\newfontfamily\sansfont[]{Roboto}
+\newfontfamily\titlefont[]{Asap}
+\newfontfamily\headingfont[]{Asap}
 \newfontfamily\monofont[]{Roboto Mono}
 
 \definecolor{blue}{HTML}{648DDD}
+\definecolor{orange}{HTML}{DC8563}
+\definecolor{shadecolor}{HTML}{dd8664}
 \definecolor{dark-gray}{gray}{0.2}
 \definecolor{light-gray}{gray}{0.35}
 \definecolor{white-gray}{gray}{0.5}
@@ -63,21 +76,75 @@
 \usepackage[absolute,overlay]{textpos}
 
 \newcommand{\cover}[1]{
+  
   \pagenumbering{gobble}
+
+  \newgeometry{margin=1cm}
   
-  \ThisCenterWallPaper{1}{#1}
-
-  \begin{textblock}{20}[0, 1](0.8, 15.675)
-    {\color{light-gray}\bf\fontsize{8pt}{10pt}\monofont\MakeUppercase\today}
-  \end{textblock}
-
-  \begin{textblock}{20}[1, 1](14.675, 15.675)
-    {\hspace*{\fill}\color{light-gray}\bf\fontsize{8pt}{10pt}\monofont\projectlink}
-  \end{textblock}
-
-  \null\newpage
+  \parindent 0pt
   
+  %\ThisCenterWallPaper{1.85}{#1}
+
+  {
+    \color{light-gray}
+    
+    \begin{itemize}[leftmargin=0pt]
+    \item[] \textbf{\headingfont\large\MakeUppercase{This all-in-one guide covers:}}
+    \item[] \sansfont\MakeUppercase{Spacecraft Components}
+    \item[] \sansfont\MakeUppercase{Orbital Mechanics}
+    \item[] \sansfont\MakeUppercase{Station Rendezvous}
+    \item[] \sansfont\MakeUppercase{Mission Operations}
+    \item[] \sansfont\MakeUppercase{Planetary Operations}
+    \end{itemize}
+  }
+
+  \vspace{\fill}
+
+  % The "Alpha label"
+
+  { 
+    \fontsize{25pt}{3}
+    \bf
+    \color{orange}
+    \titlefont
+    \MakeUppercase{Alpha}
+  }
+
+  \vspace{4em}
+  
+  {
+    \color{light-gray}
+    \rule[0mm]{1cm}{0.2cm}
+  }
+  
+  \vspace{1ex}
+  
+  % The header
+  
+  { 
+    \color{dark-gray}
+    
+    \fontsize{31pt}{3}
+    \bf
+    \titlefont
+    \MakeUppercase{Orbital Vehicle\vspace{0.5ex}\\Operations Handbook}
+  }
+
+  \vspace{1em}
+  
+  % The bottom footer text, now
+
+  {
+    \color{light-gray}\bf\fontsize{8pt}{10pt}\monofont\MakeUppercase\today
+    \hspace{\fill}
+    \color{light-gray}\bf\fontsize{8pt}{10pt}\monofont\projectlink
+  }
+
+  \restoregeometry
+  \newpage\null
   \pagenumbering{arabic}
+  \parindent 2.5em
+
 }
 
 % Prepare for the illustrations
@@ -140,9 +207,9 @@
 
 \begin{document}
 
-\begin{titlepage}
-\cover{../cover/cover-alpha.pdf}
-\end{titlepage}
+%\begin{titlepage}
+\cover{../cover/bg.png}
+%\end{titlepage}
 
 \makeatletter
 \renewcommand\tableofcontents{%
@@ -152,7 +219,8 @@
 
 \tableofcontents
 
-\chapter{Introduction}
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
 
 \afterchapter
 
@@ -167,8 +235,8 @@ rendezvous with a space station, how capsules control their reentry,
 the entire launch process, and more.
 
 I hope this Handbook helps you understand orbital mechanics and better
-appreciate the hundreds of thousands of hours that went into
-designing, building, and flying any spacecraft.
+appreciate the hundreds of thousands of hours that go into designing,
+building, and flying any spacecraft or launch vehicle.
 
 \vspace{1em}
 
