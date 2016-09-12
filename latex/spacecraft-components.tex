@@ -16,7 +16,7 @@ module is jettisoned before reentry.
 Every crewed spacecraft needs a pressurized compartment for its
 crew. The crew compartment must be pressurized to withstand the vacuum
 of space, and it must provide environmental controls and life support
-systems (ECLSS) for the long stay in space. The crew compartment
+systems (\acrshort{eclss}) for the long stay in space. The crew compartment
 usually contains custom-made seats, for the astronauts to sit in
 during launch and reentry, in addition to on-orbit sleeping when not
 docked to a space station. The crew compartment is not necessarily the
@@ -26,12 +26,12 @@ same as the spacecraft's outer mold line (the ``shape'' of the vehicle).
 
 \subsection{ECLSS}
 
-Environmental controls and life support systems (ECLSS) are
-a required component of any crewed vehicle. Without ECLSS, exhaled
+Environmental controls and life support systems (\acrshort{eclss}) are
+a required component of any crewed vehicle. Without \acrshort{eclss}, exhaled
 carbon dioxide will displace the oxygen, and the crew compartment will
-overheat when the capsule is exposed to the sun. ECLSS is a very
+overheat when the capsule is exposed to the sun. \acrshort{eclss} is a very
 complicated mission-critical system, and redundancy is built-in so
-that an ECLSS subcomponent failure does not necessitate a mission
+that an \acrshort{eclss} subcomponent failure does not necessitate a mission
 cancellation.
 
 \section{Power}
@@ -42,8 +42,8 @@ of recharging the batteries while the spacecraft is in space; these
 usually take the form of solar panel arrays.
 
 Power is a critical system on any spacecraft since it powers many
-other critical systems, such as ECLSS. Since astronauts cannot simply
-perform an EVA to debug the power system, it must be incredibly
+other critical systems, such as \acrshort{eclss}. Since astronauts cannot simply
+perform an \acrshort{eva} to debug the power system, it must be incredibly
 reliable and fault-tolerant.
 
 \subsection{Power Generation}
@@ -51,7 +51,8 @@ reliable and fault-tolerant.
 Not all spacecraft have power generation; for example, the Boeing
 Starliner only has batteries, and is not capable of free-flight for
 more than 60 hours; it must rendezvous and dock with a space station
-for any mission that's longer than 60 hours.
+for any mission that's longer than 60 hours. Any spacecraft capable of
+deep-space flight needs some form of power generation.
 
 \subsubsection{Solar Arrays}
 
@@ -109,6 +110,8 @@ the end of the mission. Most spacecraft also need to keep themselves
 pointing in one direction to keep the solar panels facing towards the
 sun and to keep the thermal radiator facing away from the sun.
 
+\subsection{Thrusters}
+
 There are a few methods of controlling attitude on a spacecraft, but
 by far the most common is a reaction control system (RCS). A reaction
 control system is simply a network of small thrusters, that can
@@ -116,10 +119,15 @@ produce small amounts of thrust quickly and accurately. With enough
 RCS thrusters pointed in different directions, the spacecraft can
 orient itself in any direction.
 
-RCS thrusters are usually placed on the capsule or spaceplane, but
-some spacecraft feature RCS thrusters on the service module in
-addition to the capsule or spaceplane RCS thrusters. RCS propellant is
-sometimes stored in the service module as well.
+RCS thrusters are usually placed directly in the capsule or
+spaceplane, but some spacecraft feature RCS thrusters on the service
+module in addition to the capsule or spaceplane RCS thrusters. RCS
+propellant is sometimes stored in the service module as well; however,
+fuel transfer pipes are then required, which adds complexity to the
+spacecraft/service module interface and adds risk to the service
+module jettison sequence.
+
+\subsection{Engines}
 
 Some spacecraft also feature a dedicated orbital engine, usually
 pointed directly backwards. This engine is usually more powerful and
@@ -130,3 +138,4 @@ Space stations tend to be delicate; typically, visiting spacecraft
 must not use their RCS thrusters when in close proximity to the
 station. This is to prevent damage of delicate space station
 components, such as solar arrays and wiring.
+

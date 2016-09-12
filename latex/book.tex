@@ -1,12 +1,12 @@
 %\documentclass[oneside,a5paper]{book}
 \input{setup.tex}
 
+\input{acronyms.tex}
+
+\makeglossaries
+
 \title{Orbital Vehicle Operations Handbook}
 \author{Jon Ross}
-
-%\input{acronyms.tex}
-
-%\makeglossaries
 
 \begin{document}
 
@@ -20,6 +20,8 @@
 
 \tableofcontents
 
+\hypersetup{allcolors=orange}
+
 \input{introduction.tex}
 
 \input{spacecraft-components.tex}
@@ -29,6 +31,8 @@
 \input{planetary-operations.tex}
 
 \input{mission-operations.tex}
+
+\printglossaries
 
 % Final page date information
 

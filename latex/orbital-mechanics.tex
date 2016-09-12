@@ -2,22 +2,32 @@
 \chapter{Orbital Mechanics}
 
 \section{Delta-V}
+\label{sec:dv}
 
-Delta-v, dV, or \dv\ (short for delta velocity), is simply the
-difference in velocity between two states. For example, imagine your
-spacecraft is floating in space, with no other bodies to affect it; to
-quantifiably measure \dv\ , a part of the spacecraft is separated from
-the rest of the spacecraft. Because of Newton's first law, it will
-simply coast alongside the spacecraft; the current \dv\ between the
-spacecraft and the part that was left behind is 0 meters per second.
+Delta-v, dV, or \dv\ (short for delta velocity), is simply the change
+in velocity between two velocities. \dv\ is a difficult concept to wrap
+your mind around at first, so here's an example of \dv\ in action.
+
+Imagine a spacecraft that's floating in space, with no other bodies to
+affect it; to quantifiably measure \dv, a part of the spacecraft is
+separated from the rest of the spacecraft. Because of Newton's first
+law, it will simply coast alongside the spacecraft; the current
+\dv\ between the spacecraft and the part that was left behind is 0
+meters per second.
 
 Now imagine a rocket engine on the spacecraft is ignited. The
 spacecraft will start to fly away from the part that was left
-behind. When the engine is shut down, the \dv\ of the burn is simply the
-difference in velocity between the piece of your spacecraft (which is
-equivalent to the velocity of the spacecraft before the burn) and your
-spacecraft after the burn. \dv\ is almost always measured in meters per
-second.
+behind. When the engine is shut down, the \dv\ of the burn in this
+case is simply the difference in velocity between the piece of your
+spacecraft (which is equivalent to the velocity of the spacecraft
+before the burn) and your spacecraft after the burn.
+
+Of course, in reality, \dv\ isn't measured by dropping off parts of
+the spacecraft; instead, it can be calculated from the efficiency of
+an engine and the total mass of the spacecraft before and after the
+burn.
+
+\dv\ is almost always measured in meters per second.
 
 \illustration{delta-v}
 
@@ -100,8 +110,8 @@ fixed, non-moving body and a spacecraft that orbits around it. For
 example, in an ideal two-body system with a typical crewed spacecraft
 weighing about 8 metric tons orbiting the Earth, the barycenter of the
 pair is only one 50,000th of an atom away from the Earth's center of
-mass (CoM). Realistically, the barycenter can be ignored when planning
-most spacecraft missions.
+mass (\acrshort{com}). Realistically, the barycenter can be ignored
+when planning most spacecraft missions.
 
 \subsection{Kepler's Three Laws}
 

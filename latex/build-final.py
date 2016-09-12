@@ -4,6 +4,7 @@ import shutil
 import build
 
 build.build()
+build.glossaries()
 build.build()
 build.build()
 build.compress()

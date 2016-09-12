@@ -3,23 +3,10 @@
 \usepackage[margin={15mm,20mm},footskip=12mm]{geometry}
 
 \usepackage{nameref}
+\usepackage[all]{nowidow}
 
 % For colors
 \usepackage{xcolor}
-
-% For the glossary
-
-%\usepackage[toc,acronym,xindy]{glossaries}
-
-%\usepackage{xparse}
-
-%\DeclareDocumentCommand{\newdualentry}{ O{} O{} m m m m } {
-%  \newglossaryentry{gls-#3}{name={#5},text={#5\glsadd{#3}},
-%    description={#6},#1
-%  }
-%  \makeglossaries
-%  \newacronym[see={[Glossary:]{gls-#3}},#2]{#3}{#4}{#5\glsadd{gls-#3}}
-%}
 
 % Uppercase and titles
 
@@ -55,7 +42,20 @@
 
 % URLs
 
-\usepackage[hidelinks,xetex]{hyperref}
+\usepackage[colorlinks=true,hidelinks,xetex]{hyperref}
+
+% For the glossary
+
+\usepackage[xindy,acronym,toc,hyperfirst=false]{glossaries}
+
+\usepackage{xparse}
+\DeclareDocumentCommand{\newdualentry}{ O{} O{} m m m m } {
+  \newglossaryentry{gls-#3}{name={#5},text={#5\glsadd{#3}},
+    description={#6},#1
+  }
+  \makeglossaries
+  \newacronym[see={[Glossary:]{#3}},#2]{#3}{#4}{#5\glsadd{gls-#3}}
+}
 
 % Set up the proper fonts
 
@@ -95,7 +95,7 @@
 \usepackage[absolute,overlay]{textpos}
 
 \newcommand{\cover}[1]{
-  
+
   \pagenumbering{gobble}
 
   \newgeometry{margin=1cm}
@@ -194,17 +194,17 @@
 % CUSTOM MACROS
 %%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\link}[2]{\monofont\color{blue}\href{#1}{\textbf{#2}}}
+\newcommand{\monolink}[2]{\monofont\color{orange}\href{#1}{\textbf{#2}}}
 
 % Define social links
 
-\newcommand{\reddit}[1]{{\link{https://reddit.com/u/#1}{u/#1}}}
-\newcommand{\twitter}[1]{{\link{https://twitter.com/#1}{@#1}}}
-\newcommand{\email}[1]{{\link{mailto:#1}{#1}}}
+\newcommand{\reddit}[1]{{\monolink{https://reddit.com/u/#1}{u/#1}}}
+\newcommand{\twitter}[1]{{\monolink{https://twitter.com/#1}{@#1}}}
+\newcommand{\email}[1]{{\monolink{mailto:#1}{#1}}}
 
 % Define the \dv command
 
-\newcommand{\dv}{$\Delta$\hspace{-0.2ex}V}
+\newcommand{\dv}{\glslink{dv}{$\Delta$\hspace{-0.3ex}V}}
 
 % Define the illustration command
 
@@ -224,8 +224,8 @@
 
 \newcommand{\projectlink}{\href{https://zlsa.github.io/handbook/}{\MakeTextUppercase{zlsa.github.io/handbook}}}
 
-\newcommand{\colorref}[2]{\hyperref[#1]{\color{orange}#2}}
-\newcommand{\seeref}[1]{see \colorref{#1}{\textbf{\nameref{#1}}}, on page \pageref*{#1}}
-\newcommand{\linkref}[2]{\colorref{#1}{\textbf{#2}}}
+\newcommand{\colorref}[2]{\hyperref[#1]{{\color{orange}#2}}}
+\newcommand{\seeref}[1]{see \colorref{#1}{\nameref{#1}}, on page \pageref*{#1}}
+\newcommand{\linkref}[2]{\colorref{#1}{#2}}
 % And here we go.
 
