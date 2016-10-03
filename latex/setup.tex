@@ -49,10 +49,9 @@
 \usepackage[xindy,acronym,toc,hyperfirst=false]{glossaries}
 
 \usepackage{xparse}
-\DeclareDocumentCommand{\newdualentry}{ O{} O{} m m m m } {
-  \newglossaryentry{gls-#3}{name={#5},text={#5\glsadd{#3}},
-    description={#6},#1
-  }
+\DeclareDocumentCommand{\newdualentry}{ O{} O{} m m m m } {%
+  \newglossaryentry{gls-#3}{name={#5},text={#5\glsadd{#3}},%
+    description={#6},#1}
   \makeglossaries
   \newacronym[see={[Glossary:]{#3}},#2]{#3}{#4}{#5\glsadd{gls-#3}}
 }
@@ -87,7 +86,7 @@
 
 % Change paragraph separation method
 
-\setlength{\parskip}{4pt}%
+%\setlength{\parskip}{4pt}%
 
 % Prepare for the full-bleed cover
 
@@ -188,7 +187,7 @@
 % Remove enumeration spacing
 
 \usepackage{enumitem}
-\setlist{nolistsep}
+\setlist{noitemsep}
 
 %%%%%%%%%%%%%%%%%%%%
 % CUSTOM MACROS

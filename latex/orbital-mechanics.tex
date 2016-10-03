@@ -4,15 +4,16 @@
 \section{Delta-V}
 \label{sec:dv}
 
-Delta-v, dV, or \dv\ (short for delta velocity), is simply the change
-in velocity between two velocities. \dv\ is a difficult concept to wrap
-your mind around at first, so here's an example of \dv\ in action.
+Delta-v, dV, or~\dv\ (short for delta velocity), is simply the change
+in velocity between two velocities. \dv\ is a difficult concept to
+wrap your mind around at first, so here's an example of \dv\ in
+action.
 
 Imagine a spacecraft that's floating in space, with no other bodies to
 affect it; to quantifiably measure \dv, a part of the spacecraft is
 separated from the rest of the spacecraft. Because of Newton's first
 law, it will simply coast alongside the spacecraft; the current
-\dv\ between the spacecraft and the part that was left behind is 0
+\dv\ between the spacecraft and the part that was left behind is zero
 meters per second.
 
 Now imagine a rocket engine on the spacecraft is ignited. The
@@ -33,8 +34,8 @@ burn.
 
 \dv\ does not measure distance; it measures only a difference in
 velocity. The energy required for maneuvers and engine burns is
-measured in \dv\ , providing a vehicle-agnostic measurement of the amount
-of energy required.
+measured in \dv, providing a vehicle-agnostic measurement of the
+amount of energy required.
 
 \section{Gravity}
 
@@ -95,12 +96,13 @@ trajectory.
 \subsection{Two-body Systems}
 
 In an ideal two-body system, both of the bodies will orbit around
-their common barycenter. This is because both bodies are affecting
-each other; no matter how heavy one is and how light the other is, the
-bodies will have a barycenter. As one body gets heavier and the other
-gets lighter, the barycenter will move towards the heavier body;
-however, unless the lighter body has zero mass, the heavier body will
-always be orbiting the shared barycenter.
+their common \gls{barycenter}. This is because both bodies are
+affecting each other; no matter how heavy one is and how light the
+other is, the bodies will have a \gls{barycenter}. As one body gets
+heavier and the other gets lighter, the \gls{barycenter} will move
+towards the heavier body; however, unless the lighter body has zero
+mass, the heavier body will always be orbiting the shared
+\gls{barycenter}.
 
 \illustration{barycenter}
 
@@ -108,10 +110,10 @@ Despite this, in an ideal two-body system featuring a planet (such as
 the Earth or Mars) and a spacecraft, it can usually be simulated as a
 fixed, non-moving body and a spacecraft that orbits around it. For
 example, in an ideal two-body system with a typical crewed spacecraft
-weighing about 8 metric tons orbiting the Earth, the barycenter of the
-pair is only one 50,000th of an atom away from the Earth's center of
-mass (\acrshort{com}). Realistically, the barycenter can be ignored
-when planning most spacecraft missions.
+weighing about 8 metric tons orbiting the Earth, the \gls{barycenter}
+of the pair is only one 50,000th of an atom away from the Earth's
+center of mass (\acrshort{com}). Realistically, the \gls{barycenter}
+can be ignored when planning most spacecraft missions.
 
 \subsection{Kepler's Three Laws}
 
@@ -120,12 +122,12 @@ a planet. (Note that these three laws only apply in the case of an
 orbit with an eccentricity less than one.)
 
 \begin{enumerate}
-\item The orbit of a body around a planet is an ellipse, with the planet
-  being at one of the two foci of the ellipse.
-\item A line segment connecting the body and the planet sweeps out equal
-  areas during equal areas of time.
-\item The square of the orbital period of a body is proportional to the
-  cube of the semi-major axis of its orbit.
+\item The orbit of a body around a planet is an ellipse, with the
+  planet being at one of the two foci of the ellipse.
+\item A line segment connecting the body and the planet sweeps out
+  equal areas during equal areas of time.
+\item The square of the orbital period of a body is proportional to
+  the cube of the semi-major axis of its orbit.
 \end{enumerate}
 
 The first law simply describes the basic shape of any orbit; the
@@ -210,22 +212,22 @@ equator would always cross through the center of the frame.
 \illustration{inclination}
 
 However, no launch sites currently in operation are situated on the
-equator. Cape Canaveral is at 28 degrees north of the equator, while
-Russia's Baikonur Cosmodrome is nearly 46 degrees north of the
+equator. Cape Canaveral is at 28~degrees north of the equator, while
+Russia's Baikonur Cosmodrome is nearly 46~degrees north of the
 equator. When a spacecraft is launched into orbit, the minimum
 inclination is the same as that of its launch site. This is a large
-part of the decision to build the ISS at 51.6 degrees inclination,
-since Russia's launch site is located at 46 degrees north; if the
-inclination of the ISS was lower than 46 degrees, Russia would not be
-able to easily launch their spacecraft to the ISS.
+part of the decision to build the ISS at 51.6~degrees inclination,
+since Russia's launch site is located at 46~degrees north; if the
+inclination of the~ISS was lower than 46~degrees, Russia would not be
+able to easily launch their spacecraft to the~ISS.
 
 There's another factor that must be taken into consideration in
 conjunction with orbital inclination, and that's the velocity of the
 planet's surface at the launch site. Since the Earth spins along its
-axis once every 23 hours and 56 minutes (one sidereal day), some
+axis once every 23~hours and 56~minutes (one sidereal day), some
 velocity can be taken from the Earth's rotation when launching
 spacecraft. At the equator, the Earth's surface velocity (relative to
-the Sun and Earth's center of mass) is 464 meters per second
+the Sun and Earth's center of mass) is 464~meters per second
 (m/s). The further the launch site is from the equator, the less
 surface velocity is present. To launch into orbit from a high
 inclination launch site requires more energy from the launch vehicle
@@ -246,7 +248,7 @@ furthest point. Any orbit with an eccentricity greater than one will
 have an apoapsis and a periapsis. The periapsis and apoapsis are
 typically measured from the spacecraft to the surface of the body, to
 simplify matters for the astronauts; however, mathematically, the
-periapsis and apoapsis are measured relative to the barycenter.
+periapsis and apoapsis are measured relative to the \gls{barycenter}.
 
 \illustration{periapsis-apoapsis}
 
@@ -425,8 +427,7 @@ first point to the proper altitude as well.
 Orbit phasing refers to the timing of a spacecraft within its
 orbit. This is usually required during rendezvous; even if the
 semi-major axes, orbital planes, and eccentricities of the two
-spacecraft are the same, the spacecraft may be a half-orbit
-apart.
+spacecraft are the same, the spacecraft may be a half-orbit apart.
 
 Orbit phasing needs to be performed on every mission that includes a
 rendezvous. However, with the proper planning, it can be performed
@@ -436,8 +437,8 @@ alongside the spacecraft's altitude adjustment maneuvers.
 
 A plane change maneuver adjusts the inclination of the spacecraft's
 orbit. To do so, it must burn in the normal or anti-normal
-directions. Plane change maneuvers are the most expensive maneuver, \dv\ 
-wise. To adjust the inclination of a circular orbit by 90 degrees
+directions. Plane change maneuvers are the most expensive maneuver,
+\dv\ wise. To adjust the inclination of a circular orbit by 90 degrees
 requires nearly as much \dv\ as it took to reach orbit in the first
 place. Plane changes are only performed when they are absolutely
 necessary, such as for satellites that must be in geostationary
@@ -452,8 +453,8 @@ often more efficient to dramatically increase the apoapsis, perform a
 plane change, then lower the apoapsis again instead of performing a
 plane change in-place. Some launch providers will launch GEO
 satellites into a super-synchronous orbit, with an apoapsis much
-higher than necessary, to reduce the \dv\ requirements of the satellite
-itself.
+higher than necessary, to reduce the \dv\ requirements of the
+satellite itself.
 
 \subsection{Oberth Effect}
 
